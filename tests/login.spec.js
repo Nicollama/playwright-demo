@@ -8,7 +8,7 @@ test('user can log in successfully', async ({ page }) => {
   // 2. Fill in the username/email
   await page.getByPlaceholder('Username').fill('Admin');
   await page.waitForTimeout(3000);
-  // or: await page.getByLabel('Email').fill('user@example.com');
+
 
   // 3. Fill in the password
   await page.getByPlaceholder('Password').fill('admin123');
